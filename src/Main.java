@@ -14,15 +14,15 @@ public class Main {
 	net.createUserProfile("Skywalker", 10);
 	net.createUserProfile("Obi-Wan", 30);
 	net.createUserProfile("Guanyi", 24);
-	net.createUserProfile("Xiao", 23);
-	net.createUserProfile("Biyin", 5);
+	net.createUserProfile("Xi", 23);
+	net.createUserProfile("Bi", 5);
 	// create corporate companies
 	net.createCorporateProfile("Google");
 	net.createCorporateProfile("Facebook");
 	net.createCorporateProfile("Amazon");
 	// connect users
-	net.connect("Guanyi", "Xiao");
-	net.connect("Guanyi", "Biyin");
+	net.connect("Guanyi", "Xi");
+	net.connect("Guanyi", "Bi");
 	net.connect("Guanyi", "Spock");
 	net.connect("Guanyi", "Obi-Wan");
 	net.connect("Spock", "Kirk");
@@ -31,15 +31,15 @@ public class Main {
 	// Users rate corporate company
 	net.rate("Guanyi", "Google", 5);
 	net.rate("Guanyi", "Facebook", 1);
-	net.rate("Xiao", "Google", 5);
+	net.rate("Xi", "Google", 5);
 	net.rate("Kirk", "Google", 3);
 	net.rate("Skywalker", "Amazon", 9);
 	// Users post message
 	net.postMessage("Guanyi", "I'm tired today.", 0, 0);
 	net.postMessage("Guanyi", "I've finished my work.", 1, 0);
-	net.postMessage("Xiao", "I don't like star strek.", 1, 0);
-	net.postMessage("Xiao", "I don't like star war.", 1, 0);
-	net.postMessage("Xiao", "I don't like star movies.", 1, 0);
+	net.postMessage("Xi", "I don't like star strek.", 1, 0);
+	net.postMessage("Xi", "I don't like star war.", 1, 0);
+	net.postMessage("Xi", "I don't like star movies.", 1, 0);
 	net.postMessage("Spock", "Live long and prosper.", 0, 0);
 	net.postMessage("Kirk", "She is hot.", 0, 18);
 	// Post ads.
@@ -48,14 +48,14 @@ public class Main {
 	net.postAd("Facebook", "New version avaiable now!", 0, true);
 	// print wall
 	net.printWall("Guanyi");
-	net.printWall("Biyin");
+	net.printWall("Bi");
 	net.printFriendList("Guanyi");
 	// print distance to exam the function
-	System.out.println(net.distance("Xiao", "Kirk"));
-	System.out.println(net.distanceExcludeCorporate("Xiao", "Kirk"));
+	System.out.println(net.distance("Xi", "Kirk"));
+	System.out.println(net.distanceExcludeCorporate("Xi", "Kirk"));
 	// print path
-	net.printPath("Xiao", "Kirk");
-	net.printPathExcludeCorporate("Xiao", "Kirk");
+	net.printPath("Xi", "Kirk");
+	net.printPathExcludeCorporate("Xi", "Kirk");
 
     }
 }
